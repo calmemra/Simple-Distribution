@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Distribution</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="shortcut icon" type="image/x-icon" href="Resources/sd-logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>                                                                             
 </head>
-<body>
-    <div id="body" >
-        <header>
+<body onmousedown="return false" onselectstart="return false">
+    <div id="main-body" >
+        <header id="header-section">
             <div class="container">
               
               <div class="menuUp">
@@ -27,20 +26,38 @@
               <nav id="head-links">
                 <ul>
                   <li><a href="main.html">Home</a></li>
-                  <li><a href="main.html">Items</a></li>
-                  <li><a href="main.html">About</a></li>
+                  <li><a href="products.html" target="_self" >Products</a></li>
+                  <li><a href="about.html">About</a></li>
                   <li><a href="main.html">Contact</a></li>
                 </ul>
               </nav>
               
             </div>
           </header>
-
-        <section>                                                                                                                               
+          <!-- Simple H2 and 500ml Photo -->
+        <section id="body-section-1">                                                                                                                               
             <h1 id="simple-head">Simple <br> Distribution</h1>
             <img id="main-body-img" src="Resources/home body picture.png" alt="Photos of 3 Vanilla 500ml ">
-            
         </section>
+
+
+      <section id="body-section-2">
+            <h1 id="who-we-are">Who we are?</h1>
+            <img id="joy-logo" src="Resources/Joy-Logo.png" alt="Joy ice cream logo">
+            <p id="who-we-are-para" >Simple Distribution, an ice cream 
+              distribution company based in 
+              Trivandrum, Kerala, India,
+              has been serving Joy ice creams for 
+              over 20+ years. 
+              </p>
+              <div id="section2-button">
+              <button onclick="window.location.href='about.html';" class="section2-about-button">More About Simple Distribution</button>
+
+              <button onclick="window.location.href='https://joyicecreams.com/our-history.html';" class="section2-about-button">More About Joy Ice creams</button>
+              </div>
+
+      </section>
+
 
     </div>
     <script src="main.js"></script>
