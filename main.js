@@ -1,5 +1,5 @@
 
-
+// Hamburger Menu
 const navToggle = document.querySelector("#navToggle");
 const navClosedIcon = document.querySelector("#navClosed");
 const navOpenIcon = document.querySelector("#navOpen");
@@ -26,3 +26,8 @@ window.addEventListener(
   },
   { passive: false }
 );
+
+
+function callButton(){
+  window.location.href="https://api.whatsapp.com/send?phone=919744770070&text=Hello,%20I%20have%20an%20enquiry";
+}

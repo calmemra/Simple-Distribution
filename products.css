@@ -11,7 +11,7 @@
 
 
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     font-family: sans-serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -23,8 +23,8 @@ body{
     width: 100%;
     height: 400vh;
     background-image: linear-gradient(black,red, black);
-}
-
+} */
+/*
 #logo{
     width: 10vmax;
     margin: 10px;
@@ -58,16 +58,16 @@ body{
     background: #eaeaea;
   } 
    */
-.container {
+/* .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100vw;
     margin: 0 auto;
     padding: 0 1rem;
-}
+} */
   
-ul {
+/* ul {
     list-style-type: none;
     padding: 0%;
 }
@@ -96,10 +96,10 @@ li a {
     
     
   }
-  
+   */
   /* Mobile Toggle */
   
-  .nav-toggle {
+  /* .nav-toggle {
     display: none;
     position: absolute;
     right: 2rem;
@@ -125,9 +125,9 @@ li a {
     display: none;
   }
   
-  
+   */
   /* Mobile */
-  @media all and (max-width: 720px) {
+  /* @media all and (max-width: 720px) {
     .container {
       flex-direction: column;
       align-items: flex-start;
@@ -159,11 +159,11 @@ li a {
       display: block;
     }
   }
-  
+   */
 
 /* Body starting */
 
-#joy-logo{
+/* #joy-logo{
   width: 5%;
   position: absolute;
   left: 30%;
@@ -171,7 +171,7 @@ li a {
   opacity: 0;
 }
 
-#joy-title{
+#our-services{
   font-size: 3vw;
   font-family: 'Lexend' , 'Montserrat';
   font-variant: small-caps;
@@ -179,4 +179,40 @@ li a {
   left: 40%;
   top: 25%;
   position: absolute;
+  text-decoration: underline;
+} */
+
+
+*{
+  background-color: black;
+
+}
+img{
+  width: 13vw;
+  margin-left: 45%;
+  margin-top: 1%;
+}
+
+h1, a {
+  color: red;
+  font-variant: small-caps;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+  margin-left: 20%;
+  margin-top: 15%;
+  font-size: 4vw;
+}
+a{
+  margin-left: 50%;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 720px) {
+  h1{
+    margin-top: 50%;
+  }
+  img{
+    width: 20vw;
+  }
 }

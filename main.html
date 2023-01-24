@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Distribution</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.sass">
     <link rel="shortcut icon" type="image/x-icon" href="Resources/sd-logo.png">
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>                                                                             
 </head>
@@ -27,7 +28,7 @@
                 <ul>
                   <li><a href="main.html">Home</a></li>
                   <li><a href="products.html" target="_self" >Products</a></li>
-                  <li><a href="about.html">About</a></li>
+                  <li><a href="#body-section-2">About</a></li>
                   <li><a href="main.html">Contact</a></li>
                 </ul>
               </nav>
@@ -35,14 +36,31 @@
             </div>
           </header>
           <!-- Simple H2 and 500ml Photo -->
-        <section id="body-section-1">                                                                                                                               
-            <h1 id="simple-head">Simple <br> Distribution</h1>
-            <img id="main-body-img" src="Resources/home body picture.png" alt="Photos of 3 Vanilla 500ml ">
+        <section id="body-section-1">                                                                                  
+            <video autoplay muted loop id="sec1-video">
+              <source src="Resources/pexels-shvets-production-9058633.mp4" type="video/mp4">
+            </video>  
+            <div id="video-cover"></div>           
+            <h2 class="sec1-text" id="sec1-text1" >Craving for Ice Cream?</h2>  
+            <h3 class="sec1-text" id="sec1-text2" >Don't Worry</h3>         
+            <h1 id="simple-head">Simple Distribution</h1>
+            <h3 class="sec1-text" id="sec1-text3" >Is Here</h3>
+
+        
+
+            <div class="button-container">
+            <button id="call-button" onclick="callButton()">
+              Order Now
+            </button>
+            </div>
+            <!-- <img id="main-body-img" src="Resources/home body picture.png" alt="Photos of 3 Vanilla 500ml "> -->
         </section>
 
 
       <section id="body-section-2">
+      
             <h1 id="who-we-are">Who we are?</h1>
+            
             <img id="joy-logo" src="Resources/Joy-Logo.png" alt="Joy ice cream logo">
             <p id="who-we-are-para" >Simple Distribution, an ice cream 
               distribution company based in 
@@ -51,7 +69,6 @@
               over 20+ years. 
               </p>
               <div id="section2-button">
-              <button onclick="window.location.href='about.html';" class="section2-about-button">More About Simple Distribution</button>
 
               <button onclick="window.location.href='https://joyicecreams.com/our-history.html';" class="section2-about-button">More About Joy Ice creams</button>
               </div>
@@ -61,5 +78,47 @@
 
     </div>
     <script src="main.js"></script>
+
+     <!-- Whatsapp Button  -->
+    <script>
+      var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?36476';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#4dc247",
+        "ctaText":"",
+        "borderRadius":"25",
+        "marginLeft":"0",
+        "marginBottom":"50",
+        "marginRight":"50",
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"Simple Distribution",
+        "brandSubTitle":"Typically replies within a day",
+        "brandImg":"https://i.ibb.co/3Rq5JBM/istockphoto-1272608222-612x612.jpg",
+        "welcomeText":"Hi there!\nHow can I help you?",
+        "messageText":"Hello, I have an enquiry",
+        "backgroundColor":"#0a5f54",
+        "ctaText":"Start Chat",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"919744770070"
+    }
+  };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+  </script>
+
+
+
+
 </body>
 </html>
