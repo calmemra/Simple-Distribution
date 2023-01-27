@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
@@ -27,7 +29,6 @@ html{
 }
 body{
     width: 100%;
-    height: 400vh;
     background-color: black;
     display: flex;
 }
@@ -35,7 +36,6 @@ body{
 #logo{
     width: 10vmax;
     margin: 10px;
-    position: static;
 
 }
 #logo:hover{
@@ -67,21 +67,19 @@ body{
   color: white;
   font-family: 'Titillium Web' , 'Montserrat' , sans-serif;
   font-variant: small-caps;
+  position: absolute;
 }
 #sec1-text1{
   margin-left: 25%;
   font-size: 6vw;
-  position: absolute;
   margin-top: 12%;
 }
 #sec1-text2{
   margin-top: 20%;
   font-size: 4vw;
   margin-left: 40%;
-  position: absolute;
 }
 #sec1-text3{
-  position: absolute;
   margin-top: 36%;
   margin-left: 47%;
   font-size: 2vw;
@@ -99,7 +97,7 @@ body{
   width: 20%;
   height: 10%; 
   font-size: 3vw;
-  font-family: "Lato" , 'Ubuntu', 'sans-serif';
+  font-family: 'Nunito';
   font-variant: small-caps;
   font-weight: 400;
   background-color: red;
@@ -109,7 +107,7 @@ body{
   margin-left: 40%;
   border-radius: 10px;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
 }
 #call-button:hover{
   background-color: black;
@@ -138,7 +136,6 @@ body{
 ul {
     list-style-type: none;
     padding: 0%;
-
 }
   
 li {
@@ -206,7 +203,7 @@ li a {
     nav {
       height: 0;
       left: 15%;
-      width: 100vw;
+      width: 80%;
       overflow: hidden;
       top: 8vh;
       transition: 250ms height ease-in-out;
@@ -259,7 +256,7 @@ li a {
     #call-button{
       margin-top: 70%;
       font-size: 5vw;
-      height: 4vh;
+      height: 4%;
       width: 30%;
       margin-left: 34%;
     }
@@ -279,7 +276,7 @@ li a {
 }
 #sec1-video{
   width: 100vw;
-  height: 110vh;
+  height: 110%;
   top: 0%;
   left: 0%;
   object-fit: cover;
@@ -291,77 +288,115 @@ li a {
   background-color: black;
   position: fixed;
   opacity: 0.5;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 110%;
   z-index: -1;
 }
 
 #body-section-2{
-  margin-top: 60%;
+  margin-top: 70%;
   width: 100%;
   position: absolute;
-  height: 100%;
-  background-color: red;
+  height: 60vmax;
+  
+} 
+
+
+#sec2-video{
+  top: 100;
+  position: absolute;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+
+}
+#img-cover-sec2{
+  z-index: -1;
+  width: 100%;
+  height: 60vmax;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+}
+#sec2-img-bg{
+  width: 100%; 
+  position: absolute; 
+  height: 60vmax;
+  object-fit: cover;
+  z-index: -1;
 } 
 #who-we-are{
-  color: white;
+  color: red;
+  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-variant: small-caps;
   font-size: 4vw;
-  text-align: center;
-  margin-top: 5%;
-  pointer-events: none;
+  margin-top: 5vh;
+  margin-left: 70%;
+  position: absolute;
 }
 
 #joy-logo{
   width: 25%;
-  margin-top: 8%;
-  margin-left: 8%;
+  margin-top: 20%;
+  margin-left: 5%;
   position: absolute;
   box-shadow: 5px 5px 20px black;
 }
 #who-we-are-para{
-  font-family: 'Montserrat',monospace;
+  font-family: 'Nunito' , monospace;
   font-weight: 500;
   font-size: 3vw;
-  margin-left: 45%;
-  margin-top: 7%;
+  margin-left: 43%;
+  width: 55vw;
+  margin-top: 15%;
   font-variant: small-caps;
+  position: absolute;
+  color: white;
+  font-weight: 700;
+  text-align: right;
 }
-#section2-button{
+/* #sec2-but-container{
   width: 100%;
   padding-left: 36%;
   position: absolute;
-  margin-top: 8%;
-  background-color: black;
-}
+  margin-top: 45%;
+  background-color: red;
+}  */
 .section2-about-button{
-  background: none;
+  background: red;
+  color: black;
+  border-radius: 4px;
   border: 0ch;
   font-family: 'Montserrat' , 'sans-serif';
   font-variant: small-caps;
-  width: 40%;
+  width: 23%;
   padding: 5px;
-  font-size: 1.5em;
-  font-weight: 500;
-}
-button{
-  margin-left: 7%;
-}
-.section2-about-button:hover{
-  background-color: rgb(255, 0, 0);
-  color: black;
+  font-size: 2vw;
+  margin-top: 40%;
+  margin-left: 6%;
   transition: 500ms;
+}
+
+.section2-about-button:hover{
+  background-color: black;
+  color: red;
+  
   transform: scaleX(102%);
   font-weight: 800;
 }
 
 @media screen and (max-width: 720px) {
   #who-we-are{
-    font-size: 8vw;
-
+    font-size: 9vw;
+    margin-left: 23%;
+    margin-top: 20%;
   }
   #joy-logo{
+    margin-top: 120%;
+    width: 50vw;
+    margin-left: 25%;
     display: none;
   }
   #body-section-1{
@@ -369,23 +404,309 @@ button{
   }
   #body-section-2{
     margin-top: 200%;
+    height: 90%;
   }
   #who-we-are-para{
-    margin-top: 20%;
+    margin-top: 40%;
     font-size: 6vw;
-    margin-left: 6%;
+    margin-left: 10%;
     text-align: center;
     margin-right: 4%;
+    width: 80%;
   }
   .section2-about-button{
-    width: 80%;
-    background-color: black;
+    width: 50%;
+    background-color: red;
     height: 5vh;
+    font-size: 3vw;
 
   }
-  #section2-button{
-    padding-left: 5%;
+  #sec2-but-container{
+    padding-left: 25%;
     background: none;
+    margin-top: 100%;
   }
   
+  }
+  #sec2-img-bg{
+    height: 145vmin;
+  }
+  #img-cover-sec2{
+    height: 145vmin;
+  }
+  
+
+
+#body-section3{
+  margin-top: 140%;
+  height: 30%;
+  
+}
+
+#photo-text-container{
+  width: 100%;
+  /* background-color:  */
+  height: 2%;
+
+}
+#photos-text-sec3{
+  color: red;
+  font-size: 4vw;
+  font-variant: small-caps;
+  font-family: 'Montserrat', 'monospace';
+  text-align: center;
+  }
+#sec3-img-gallery{
+  margin-top: 6%;
+
+}
+.gallery-img-container{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  font-variant: small-caps;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 1.5vw;
+  padding: 4%;
+  text-align: center;
+}
+.gallery-img-container:hover .overlay {
+  opacity: 1;
+}
+#showmore-div{
+  top: 0;
+  width: 100%;
+  height: 5%;
+}
+#showmore-img-but{
+  background-color: red;
+  color: black;
+  font-family: 'Nunito';
+  /* font-size: vw; */
+  width: 10%;
+  height: 5vh;
+  border: 0px;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-left: 45%;
+  position: absolute;
+  transition: 0.5s;
+}
+#showmore-img-but:hover{
+  background-color: black;
+  color: red;
+
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 3px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+    }
+  #photo-text-container{
+    height: 2%;
+  }
+  #body-section4{
+    margin-top: 90vmax;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 720px) {
+  .column{
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  #photo-text-container{
+    height: 1%;
+  }
+  #body-section3{
+    margin-top: 360vmin;
+  }
+  #photo-text-sec3{
+    align-items: center;
+
+  }
+  .overlay{
+    font-size: 3vw;
+  }
+
+  #showmore-img-but{
+    height: 4vh;
+    width: 30%;
+    margin-left: 35%;
+  }
+  #body-section4{
+    margin-top: 5vmax;
+  }
+}
+
+/* Body section 4 */
+
+#body-section4{
+  width: 100%;
+  height: 15%;
+  
+}
+#contact-text{
+  color: red;
+  font-family: 'Montserrat' , 'sans-serif';
+  font-size: 4vw;
+  text-align: center;
+  font-variant: small-caps;
+  text-decoration: underline 3px;
+  margin-top: 10%;
+  }
+#con-container{
+  margin-left: 35%;
+  margin-top: 3%;
+
+}
+#ph-but{
+  border: 0ch;
+  width: 10%;
+  height: 6%;
+  text-align: center;
+  font-size: 1.2vw;
+  position: absolute;
+  font-family: 'Nunito';
+}
+/* #call-icon{
+  margin-top: -20%;
+  margin-left: -20%;
+  position: absolute;
+} */
+#sec3-msg-container{
+  margin-left: 55%;
+  margin-top: -3.5%;
+}
+#msg-but{
+  border: 0ch;
+  width: 10%;
+  height: 6vh;
+  font-size: 1.2vw;
+  font-family: 'Nunito';
+  position: absolute;
+  margin-top: 3.4%;
+}
+/* #msg-icon{
+  position: absolute;
+  margin-left: -20%;
+  margin-top: -20%;
+ } */
+
+.footer-but{
+  color: black;
+  transition: 0.5s;
+  font-weight: 500;
+  background-color: red;
+  border-radius: 10px;
+}
+.footer-but:hover{
+  background-color: black;
+  color: red;
+}
+.material-symbols-outlined{
+  color: black;
+}
+.material-symbols-outlined:hover{
+
+  color: red;
+}
+#map{
+  width: 90%;
+  height: 100%;
+  margin-left: 5%;
+  margin-top: 4%;
+}
+footer{
+  width: 100%;
+  height: 2%;
+  /* background-color: aqua; */
+}
+#soc-but-container{
+  margin-left: 43%;
+  margin-top: 20%;
+}
+#fa{
+  font-size: 2.5vw;
+  color: white;
+}
+.footer-text{
+  text-align: center;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  color: white;
+  font-size: 1vw;
+}
+#footer-address{
+  position: absolute;
+  margin-left: 1%;
+  font-variant: small-caps;
+  font-family: sans-serif;
+  font-size: 0.9vw;
+  color: white;
+}
+
+@media screen and (max-width: 720px) {
+  #map{
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    height: 30%;
+  }
+  #contact-text{
+    margin-top: 60%;
+    font-size: 5vw;
+  }
+  #con-container{
+    margin-left: 10%;
+  }
+  #ph-but{
+    width: 20%;
+    height: 5%;
+    font-size: 3vw;
+  }
+  #call-icon{
+    margin-top: -3%;
+    margin-left: -4%;
+  }
+  #sec3-msg-container{
+    margin-left: 70%;
+    
+  }
+  #msg-but{
+    width: 20%;
+    height: 5%;
+    font-size: 3vw;
+    
+  }
 }

@@ -28,6 +28,17 @@ window.addEventListener(
 );
 
 
-function callButton(){
+function msgButton(){
   window.location.href="https://api.whatsapp.com/send?phone=919744770070&text=Hello,%20I%20have%20an%20enquiry";
+}
+
+function callButton(){
+  window.location.href="tel:+919744770070";
+}
+
+function showmoreButton(){
+  window.location.href="photos.html";
+}
+function social(){
+  window.location.href="https://www.instagram.com/simple_distributors";
 }

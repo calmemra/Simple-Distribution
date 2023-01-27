@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.sass">
     <link rel="shortcut icon" type="image/x-icon" href="Resources/sd-logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.3.js"></script>                                                                             
 </head>
 <body onmousedown="return false" onselectstart="return false">
@@ -27,9 +29,9 @@
               <nav id="head-links">
                 <ul>
                   <li><a href="main.html">Home</a></li>
-                  <li><a href="products.html" target="_self" >Products</a></li>
+                  <li><a href="photos.html">Photos</a></li>
                   <li><a href="#body-section-2">About</a></li>
-                  <li><a href="main.html">Contact</a></li>
+                  <li><a href="#body-section4">Contact</a></li>
                 </ul>
               </nav>
               
@@ -49,7 +51,7 @@
         
 
             <div class="button-container">
-            <button id="call-button" onclick="callButton()">
+            <button id="call-button" onclick="msgButton()">
               Order Now
             </button>
             </div>
@@ -58,22 +60,172 @@
 
 
       <section id="body-section-2">
-      
+
+
+            <!-- <video autoplay loop muted id="sec2-video">
+              <source src="Resources/section2-video.mp4" type="video/mp4">
+            </video> 
+            <div id="video-cover-sec2"></div>-->
+
+            <!-- <img id="sec2-img-bg" src="Resources/sec2-bg.jpg" alt="" >
+            <div id="img-cover-sec2"></div> -->
+
             <h1 id="who-we-are">Who we are?</h1>
             
-            <img id="joy-logo" src="Resources/Joy-Logo.png" alt="Joy ice cream logo">
+            <img onclick="window.location.href='https://joyicecreams.com/our-history.html';" id="joy-logo" src="Resources/Joy-Logo.png" alt="Joy ice cream logo">
             <p id="who-we-are-para" >Simple Distribution, an ice cream 
               distribution company based in 
               Trivandrum, Kerala, India,
               has been serving Joy ice creams for 
-              over 20+ years. 
+              23 years. Our commitment to quality and customer satisfaction, Simple Distribution is sure to delight ice cream lovers of all ages. 
               </p>
-              <div id="section2-button">
 
-              <button onclick="window.location.href='https://joyicecreams.com/our-history.html';" class="section2-about-button">More About Joy Ice creams</button>
+              <div id="sec2-but-container">
+              <button onclick="window.location.href='https://joyicecreams.com/our-history.html';" class="section2-about-button">About Joy Ice creams</button>
               </div>
 
       </section>
+
+      <section id="body-section3">
+
+        <div id="photo-text-container">
+          <h1 id="photos-text-sec3">Photos</h1>
+        </div>
+        <div id="sec3-img-gallery">
+          <div class="row">
+            <div class="column">
+              
+              <div class="gallery-img-container">
+                <img src="Flavours/Apple-Ball.jpg" alt="Strawberry in Strawberry">
+                <div class="overlay">Strawberry in Strawberry <br> (48 grams - MFFD)</div>
+              </div>
+
+              <div class="gallery-img-container">
+                <img src="Flavours/Gallery/Dezzeto.jpg" alt="Dezzeto">
+                <div class="overlay">Combow [S] <br> (45 grams - MFFD)</div>
+              </div>
+
+              <div class="gallery-img-container">
+                <img src="Flavours/Gallery/sunday-02.jpg" alt="Sundae">
+                <div class="overlay"></div>
+              </div>
+              
+              
+            </div>
+            <div class="column">
+
+              <div class="gallery-img-container">
+                <img src="Flavours/Gallery/Casatta-p-02.jpg" alt="Dillytte Sundae">
+                <div class="overlay">Dillytte Sundae <br> (50 grams - MFFD)</div>
+              </div>
+
+              <div class="gallery-img-container">
+                <img src="Flavours/Mago-ball.jpg" alt="Mango in Mango">
+                <div class="overlay">Mango in Mango<br>(60 grams - MFFD)</div>
+              </div>
+
+              <div class="gallery-img-container">
+                <img src="Flavours/Gallery/Madkka-kulf-01-1.jpg" alt="Matka Kulfi">
+                <div class="overlay">Matka Kulfi<br>(60 grams - MFFD)</div>
+              </div>
+              
+              
+            </div>
+            <div class="column">
+              <div class="gallery-img-container">
+                <img src="Flavours/Sande.jpg" alt="Ripplette">
+                <div class="overlay">Ripplette<br>(57 grams - MFFD)</div>
+
+              </div><div class="gallery-img-container">
+                <img src="Flavours/Gallery/Cookie-Mine.jpg" alt="Cookie Mine">
+                <div class="overlay">Cookie Mine<br>(61, 263, 525 grams - FD)</div>
+
+              </div><div class="gallery-img-container">
+                <img src="Flavours/Gallery/cup-01.jpg" alt="Solo Sundae">
+                <div class="overlay">Solo Sundae Strawberry<br>(170ml/90 grams - FD)</div>
+              </div>
+            
+            
+            </div>
+            <div class="column">
+
+              <div class="gallery-img-container">
+                <img src="Flavours/Gallery/Ball.jpg" alt="Ball">
+                <div class="overlay">Ball 80ml<br>38 grams - LFFD)</div>
+              </div>
+
+              <div class="gallery-img-container">
+                <img src="Flavours/Gallery/sunday-01.jpg" alt="Sundae">
+                <div class="overlay">Dillytte Sundae<br>(50 grams - MFFD)</div>
+              </div>
+
+              <div class="gallery-img-container">
+                 <img src="Flavours/chokkoo.jpg" alt="Chokko">
+                <div class="overlay">Chocobar<br>(48 grams - MFFD)</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+          <div id="showmore-div">
+            <button id="showmore-img-but" onclick="showmoreButton()">Show More</button>
+          </div>
+      </section>
+
+      <section id="body-section4">
+
+        <h1 id="contact-text">Contact</h1>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19845.730699792246!2d76.98729948917509!3d8.551198188514649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb676c2a87972ce01!2zOMKwMzMnMDUuNiJOIDc2wrA1OScyNS44IkU!5e1!3m2!1sen!2sin!4v1674649322667!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+
+
+        <div id="con-container">
+          <button class="footer-but" id="ph-but" onclick="callButton()">
+            <!-- <span class="material-symbols-outlined" id="call-icon">
+            call
+            </span> -->
+            Call
+          </button>
+        </div>
+
+        <div id="sec3-msg-container">
+          <button class="footer-but" id="msg-but" onclick="msgButton()">
+            <!-- <span class="material-symbols-outlined" id="msg-icon">
+            chat
+            </span> -->
+            Message
+          </button>
+        </div>
+ 
+
+      </section>
+
+
+      <footer>
+        <div id="soc-but-container">
+          <!-- <button id="insta-but" onclick="social()"> -->
+            <div class="social-container">
+              <ul class="social-icons">
+                  <li><a href="https://www.instagram.com/simple_distributors/"><i id="fa" class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <!-- INSTAGRAM -->
+          <!-- </button> -->
+        </div>
+
+        <p id="footer-address" >House No: 64 Rose Gardens Mukkola,   Nettayam
+          <br>
+        Trivandrum, Kerala, India
+        <br>
+        PH: 9744770070, 9895824022 
+        </p>
+
+        <p class="footer-text" ><a href="main.html">@Simple Distributors</a> </p>
+
+      </footer>
+  
+
+    
 
 
     </div>
