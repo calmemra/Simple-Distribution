@@ -35,10 +35,13 @@ function msgButton(){
 function callButton(){
   window.location.href="tel:+919744770070";
 }
-
-function showmoreButton(){
-  window.location.href="photos.html";
-}
 function social(){
   window.location.href="https://www.instagram.com/simple_distributors";
+}
+
+
+function showmore(){
+  document.getElementById('showmore').style.display = "block";
+
+  document.getElementById('showmore-img-but').style.display = "none";
 }

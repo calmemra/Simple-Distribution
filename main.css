@@ -17,6 +17,7 @@
 
 html{
   scroll-behavior: smooth;
+  min-width: 100%;
 }
 
 *{
@@ -31,6 +32,11 @@ body{
     width: 100%;
     background-color: black;
     display: flex;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+  display: none;
 }
 #logo{
     width: 10vmax;
@@ -44,7 +50,7 @@ body{
 }
 #simple-head{
     margin-left: 10vw;
-    padding-top: 27%;
+    padding-top: 22%;
     position: absolute;
     font-size: 10vw;
     color: red;
@@ -63,13 +69,8 @@ body{
   font-size: 6vw;
   margin-top: 12%;
 }
-#sec1-text2{
-  margin-top: 20%;
-  font-size: 4vw;
-  margin-left: 40%;
-}
 #sec1-text3{
-  margin-top: 36%;
+  margin-top: 30%;
   margin-left: 47%;
   font-size: 2vw;
 }
@@ -88,7 +89,7 @@ body{
   background-color: red;
   color: black;
   border: 0ch;
-  margin-top: 40%;
+  margin-top: 35%;
   margin-left: 40%;
   border-radius: 10px;
   cursor: pointer;
@@ -123,7 +124,7 @@ li {
 }
 li a {
     padding: 0 3vw;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-variant: small-caps;
     font-family: 'Montserrat','So urce Sans 3', sans-serif;
@@ -131,7 +132,7 @@ li a {
 }
   
   li:hover a {
-    color: red;
+    color: rgb(255, 255, 255);
     cursor: default;
   }
   
@@ -170,26 +171,30 @@ li a {
       align-items: flex-start;
     }
   
+    #navOpen{
+      width: 6vw;
+    }
     nav {
       height: 0;
-      left: 15%;
-      width: 80%;
+      left: 0%;
+      width: 100%;
       overflow: hidden;
       top: 8vh;
       transition: 250ms height ease-in-out;
       position: absolute;
-
+      background-color: rgb(248, 3, 3);
       
     }
   
     li {
-      text-align: center;
+      align-items: center;
+      margin-left: 7%;
+      margin-top: 1%;
     }
     
   
     li a {
-      font-size: 2vw;
-      
+      font-size: 3vw;
     }
   
     .nav-toggle {
@@ -215,7 +220,7 @@ li a {
       margin-top: 38%;
     }
     #sec1-text3{
-      margin-top: 58%;
+      margin-top: 54%;
       font-size: 6vw;
       margin-left: 40%;
     }
@@ -224,7 +229,7 @@ li a {
     }
 
     #call-button{
-      margin-top: 70%;
+      margin-top: 65%;
       font-size: 5vw;
       height: 4%;
       width: 30%;
@@ -236,7 +241,6 @@ li a {
 #header-section{
   width: 100%;
   height: 10%;
-  position: absolute;
 }
 #body-section-1{
   top: 10%;
@@ -253,18 +257,18 @@ li a {
   position: fixed;
   z-index: -1;
 }
-#video-cover{
-  top: 0;
+/* #video-cover{
+  margin-top: 10%;
   background-color: black;
-  position: fixed;
+  position: absolute;
   opacity: 0.5;
   width: 100%;
-  height: 110%;
+  height: 60vmax;
   z-index: -1;
-}
+} */
 
 #body-section-2{
-  margin-top: 70%;
+  margin-top: 50vh;
   width: 100%;
   position: absolute;
   height: 60vmax;
@@ -273,7 +277,7 @@ li a {
 
 
 #sec2-video{
-  top: 100;
+  
   position: absolute;
   opacity: 1;
   width: 100%;
@@ -281,6 +285,15 @@ li a {
   object-fit: cover;
   z-index: -1;
 }
+#video-cover-sec2{
+  z-index: -1;
+  width: 100%;
+  height: 60vmax;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+}
+
 @media screen and (max-width: 720px) {
   #sec2-video{
     max-height: 100%;
@@ -291,19 +304,7 @@ li a {
     min-height: 80%;
   }
 }
-/* @media screen and (max-width:1000px) {
-  #sec2-video{
-    height: 110%;
-  }
-} */
-#video-cover-sec2{
-  z-index: -1;
-  width: 100%;
-  height: 60vmax;
-  background-color: black;
-  opacity: 0.5;
-  position: absolute;
-}
+
 
 #who-we-are{
   color: red;
@@ -382,7 +383,7 @@ li a {
     margin-top: 20%;
   }
   #body-section-2{
-    margin-top: 200%;
+    margin-top: 60vh;
     height: 90%;
   }
   #who-we-are-para{
@@ -417,9 +418,9 @@ li a {
 
 
 #body-section3{
-  margin-top: 140%;
+  margin-top: 200vh;
   height: 30%;
-  
+
 }
 
 #photo-text-container{
@@ -460,6 +461,14 @@ li a {
 .gallery-img-container:hover .overlay {
   opacity: 1;
 }
+#showmore{
+  width: 100%;
+  display: none;
+}
+#showmore-span{
+  display: inline;
+}
+
 #showmore-div{
   top: 0;
   width: 100%;
@@ -528,7 +537,7 @@ li a {
     height: 1%;
   }
   #body-section3{
-    margin-top: 380vmin;
+    margin-top: 360vmin;
   }
   #photo-text-sec3{
     align-items: center;
